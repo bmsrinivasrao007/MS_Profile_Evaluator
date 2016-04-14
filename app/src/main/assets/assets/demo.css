@@ -1,0 +1,90 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+	background-color: #efefef;
+}
+
+body{
+	font:14px/1.5 Arial, Helvetica, sans-serif;
+	margin:0;
+}
+
+
+
+
+@media (max-width: 1000px) {
+
+
+    header h1{
+        float: none;
+    }
+
+    header a{
+        margin-top: 25px;
+        float: none;
+    }
+
+}
+
+.main-content{
+    margin: 5px;
+}
+
+/* -- Demo ads -- */
+
+@media (max-width: 1200px) {
+	#bsaHolder{ display:none;}
+}
+
+/* -- Link to Tutorialzine -- */
+
+.tz-link{
+	text-decoration: none;
+	color: #fff !important;
+	font: bold 36px Arial,Helvetica,sans-serif !important;
+}
+
+.tz-link span{
+	color: #da431c;
+}
+
+
+<!-- **************** ALERTS **************** -->
+        
+        .text-warning {
+                color: #8a6d3b
+                    }
+
+        a.text-warning:focus,
+        a.text-warning:hover {
+                color: #66512c
+                }
+
+        .bg-warning {
+            background-color: #fcf8e3
+                }
+
+        .alert-warning {
+            color: #F44336;
+            background-color: #fcf8e3;
+            border-color: #000000
+        }
+
+        .alert-warning hr {
+            border-top-color: #000000
+        }
+
+        .alert-warning .alert-link {
+            color: #66512c
+        }
+  
+        
+     <!-- **************** ALERTS END **************** -->
+
+

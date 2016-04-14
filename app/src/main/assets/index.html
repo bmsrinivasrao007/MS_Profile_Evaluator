@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+          content="width=device-width,
+	      initial-scale=1,
+	      maximum-scale=1;
+          minimum-scale=1;
+          user-scalable=no;">
+
+	<title>Form With Labels On Top</title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/form-labels-on-top.css">
+
+    
+    
+    <style>
+    
+    .div{
+        padding: 10px;
+        margin: 10px -4px;
+     background: #0277BD;
+    }
+    
+    .div h2{
+        
+     color: white;   
+    }
+        
+    .button{
+
+
+       width: 100%;
+
+
+    }
+       
+    .button1 {
+        width: inherit;
+
+    }
+        
+    
+    </style>
+    
+   <script src="assets/jquery.js"></script>
+    <script src="assets/msprofile.js"></script>
+    <script src="assets/modernz.js"></script>
+    <script src="assets/jquery.inflop.bootstrap.alert.min.js"></script>
+    
+
+</head>
+
+<body>
+	
+
+
+
+    <div class="main-content">
+        
+        <form id="msform" class="form-labels-on-top" name="form" action="javascript:mscheck()">
+            
+
+<!-- ######################################################################################################## -->            
+            <div class="div">
+                <h2>Test Scores</h2>
+            </div>
+
+
+            <div class="form-title-row">
+                <h1>Revised GRE </h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    
+                    <span>Quantitative</span>
+                    <input type="number" max="170" min="130" name="quants" placeholder="Quantitative score" required="true">
+                    <div id="quants"></div>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Verbal</span>
+                    <input type="number" max="170" min="130" required="true" name="verbal" placeholder="Verbal score">
+                    <div id="verbal"></div>
+                </label>
+            </div>
+            
+            <div class="form-row">
+                <label>
+                    <span>Analytical Writing</span>
+                    <input type="number" step="any" max="6" min="0" required="true" name="awa" placeholder="AWA score">
+                    <div id="awa"></div>
+                </label>
+            </div>
+            <br>
+            
+            <div class="form-title-row">
+                <h1>English Proficiency</h1>
+            </div>
+            
+            <div class="form-row">
+        
+                <div class="form-radio-buttons">
+
+                    <div>
+                        <label>
+                            <input type="radio" required="true" name="radio" value="toefl">
+                           
+                            <span>TOEFL</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="radio" required="true" name="radio" value="ielts">
+                            
+                            <span>IELTS</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                <label>
+                    <input type="number" step="any" required="true" name="ep" placeholder="Total" >
+                    <div id="ielts"></div>
+                     <div id="toefl"></div>
+                    <div id="ep"></div>
+                </label>
+            </div>
+            </div>
+            <br>
+<!-- ######################################################################################################## --> 
+        
+            
+            
+            
+ <!-- ######################################################################################################## -->            
+          <div class="div">
+                <h2>Academics</h2>
+            </div>
+            
+            <div class="form-title-row">
+                <h1>Under Graduation</h1>
+            </div>
+            
+            <div class="form-row">
+                <label>
+                    <span>Percentage</span>
+                    <input type="number" required="true" name="ug" placeholder="Percentage">
+                    <div id="ug"></div>
+                </label>
+            </div>
+            
+             <div class="form-row">
+                <label>
+                    <span>Number of backlogs</span>
+                    <input type="number" required="true" name="bl" placeholder="Number of backlogs">
+                    <div id="nob"></div>
+                </label>
+            </div>
+            <br>
+ <!-- ######################################################################################################## --> 
+            
+            
+            
+ <!-- ######################################################################################################## -->            
+            <div class="div">
+                <h2>Other Details</h2>
+            </div>
+            <br>
+            
+            <div class="form-row">
+                <label>
+                    <span>Job Experience</span>
+                    <input type="number" required="true" name="job" placeholder="Number of years">
+                    <div id="job"></div>
+                </label>
+            </div>
+            
+             <div class="form-row">
+                <label>
+                    <span>Internships</span>
+                    <input type="number" required="true" name="intern" placeholder="Number of months">
+                    <div id="intern"></div>
+                </label>
+            </div>
+            
+            <div class="form-row">
+                <label>
+                    <span>Publications</span>
+                    <input type="number" required="true" name="pub" placeholder="Number of papers">
+                    <div id="pub"></div>
+                </label>
+            </div>
+            
+            <div class="form-row">
+                <label>
+                    <span>Projects</span>
+                    <input type="number" required="true" name="pro" placeholder="Number of projects">
+                    <div id="pro"></div>
+                </label>
+            </div>
+            <br>
+ <!-- ######################################################################################################## -->            
+            
+            
+           
+
+            <div class="button">
+                <button id="btnsubmit" type="submit" class="button1">EVALUATE</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
